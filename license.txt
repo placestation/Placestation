@@ -1,0 +1,16 @@
+Placestation is (c) by Tejwani Industries Private Limited 
+
+This notice must be included in any distributions of this project or derivative works.
+
+Because this project consists of many types of source, individual parts of the project are made available under different licenses.
+
+Hardware Designs: The hardware designs are available under the CERN-OHL-W v2 license. Full text is available at https://cern.ch/cern-ohl.
+
+Software: The software is available under Mozilla MPL v2.0. Full text is available at https://www.mozilla.org/en-US/MPL/2.0/.
+
+KiCAD Libraries: The KiCAD libraries are available under Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0). Full text available at https://creativecommons.org/licenses/by-sa/4.0/
+
+Branding and Media: Tejwani Industries Private Limited's logo, branding, and other media is used throughout this project. This is Copyright (c) Tejwani Industries Private Limited and all rights are reserved. You may not distribute derivative works or products bearing the Placestation logo, icon, or other relevant mark. Derivative works should remove Placestation branding.
+
+
+Trademarks: The names "Tejwani Industries Private Limited" and "Placestation" are trademarked, and only to be used by Tejwani Industries Private Limited. Any derivative works should remove both marks.
