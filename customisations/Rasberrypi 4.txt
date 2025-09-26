@@ -1,2 +1,3 @@
 The Placestation Pro integrates a Raspberry Pi 4 as its onboard controller, replacing the single-board computer used in the original LumenPnP design.
-This upgrade delivers significantly faster processing, more USB bandwidth, and improved network performance, enabling smoother motion control and higher-speed vision processing for demanding production runs.
+This upgrade delivers significantly faster processing, more USB bandwidth, and improved network performance, enabling smoother motion control and higher-speed 
+vision processing for demanding production runs.
