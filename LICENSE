@@ -1,0 +1,56 @@
+PlaceStation - Open Source License Summary
+============================================
+
+PlaceStation is composed of multiple components released under different
+open-source licenses. This umbrella file lists which license applies to which
+part. Full license texts are in the licenses/ directory.
+
+  ===========================================================================
+  Component                                  License            License file
+  ===========================================================================
+  Hardware design files (CAD, STEP, STL)     CERN-OHL-W v2      licenses/CERN-OHL-W-v2.txt
+  PCB design files (Gerbers, schematics)     CERN-OHL-W v2      licenses/CERN-OHL-W-v2.txt
+  Firmware (Marlin fork)                     GPLv3              licenses/GPL-v3.txt
+  Software (OpenPnP plugin)                  GPLv3              licenses/GPL-v3.txt
+  Software (gear-ratio calibration tool)     MIT                licenses/MIT.txt
+  Software (OpenPnP configuration files)     MIT                licenses/MIT.txt
+  Documentation (README, CHANGES, etc.)      CC BY-SA 4.0       licenses/CC-BY-SA-4.0.txt
+  ===========================================================================
+
+Folder-level license mapping:
+
+  hardware/         CERN-OHL-W v2 (see per-folder README for upstream notices)
+  pcb/              CERN-OHL-W v2
+  firmware/         GPLv3
+  software/openpnp/photon-pocket-calibration/   GPLv3
+  software/openpnp/gear-ratio-tool/             MIT
+  software/openpnp/machine-config/              MIT
+  reference/        CC BY-SA 4.0
+
+UPSTREAM ATTRIBUTION
+====================
+PlaceStation is a derivative of LumenPnP by Opulo Inc.
+See NOTICE for complete attribution, and CREDITS.md for a full list of
+contributors and upstream projects.
+
+TRADEMARK
+=========
+"PlaceStation" is a trademark of Tejwani Industries Private Limited.
+"LumenPnP" and "Opulo" are trademarks of Opulo Inc.
+Trademarks are NOT licensed under the open-source licenses listed above.
+See NOTICE for trademark details.
+
+PATENT GRANT
+============
+Where applicable (CERN-OHL-W v2 §7, GPLv3 §11), Tejwani Industries Private
+Limited grants an express patent license to the Covered Source for its
+contributions to this project.
+
+WARRANTY DISCLAIMER
+===================
+The Covered Source and any Products are provided "AS IS" without warranty
+of any kind. See the respective license texts in licenses/ for full disclaimer
+and limitation-of-liability terms.
+
+This summary is informative. Where it differs from any individual license
+text in licenses/, the individual license text prevails.

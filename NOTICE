@@ -1,0 +1,75 @@
+NOTICE
+======
+
+PlaceStation
+Copyright (c) Tejwani Industries Private Limited (TIPL)
+
+This product is a derivative work of multiple open-source projects.
+The following notices are preserved as required by the applicable licenses.
+
+================================================================================
+UPSTREAM PROJECT: LumenPnP
+================================================================================
+Copyright (c) Opulo Inc.
+Source: https://github.com/opulo-inc/lumenpnp
+License: CERN-OHL-W v2 (hardware designs)
+         MPL 2.0 (CI workflows)
+         CC BY-SA 4.0 (KiCad libraries)
+
+PlaceStation is based on LumenPnP v4. All hardware modifications made by TIPL
+are released under CERN-OHL-W v2 in compliance with the upstream license.
+
+================================================================================
+UPSTREAM PROJECT: OpenPnP
+================================================================================
+Copyright (c) OpenPnP project and contributors
+Source: https://github.com/openpnp/openpnp
+License: GPLv3
+
+PlaceStation includes a plugin that extends OpenPnP for closed-loop feeder
+pocket calibration. That plugin is licensed GPLv3 in compliance with OpenPnP's
+license. PlaceStation also builds on the "press-play-walk-away" branch by
+Jorropo (https://github.com/Jorropo/openpnp/tree/press-play-walk-away).
+
+================================================================================
+UPSTREAM PROJECT: Marlin
+================================================================================
+Copyright (c) MarlinFirmware project and contributors
+Source: https://github.com/MarlinFirmware/Marlin
+        https://github.com/sphawes/Marlin (Opulo's fork, "rev05" branch)
+License: GPLv3
+
+PlaceStation's firmware modifications (sensorless homing on X/Y, speed-increment
+refinements) are released under GPLv3 in firmware/marlin/.
+
+================================================================================
+COMMUNITY PART: CP40 Tool Changer (nozzle holder)
+================================================================================
+Original geometry by Richard Klingler
+  Source: https://github.com/richardklingler/openpnp/tree/master/openscad/toolchanger
+  License: GPLv3 (via OpenPnP)
+
+Single-material remix by PapaJ (Printables @PapaJ_1388538)
+  Source: https://www.printables.com/model/1371646
+  License: GPLv3 (inherited)
+
+PlaceStation uses PapaJ's remix without modification.
+
+================================================================================
+TRADEMARK NOTICE
+================================================================================
+"LumenPnP" and "Opulo" are trademarks of Opulo Inc.
+"PlaceStation" is a trademark of Tejwani Industries Private Limited.
+
+PlaceStation is an independent product. It is NOT endorsed by, affiliated with,
+or sponsored by Opulo Inc. References to LumenPnP and Opulo in this repository
+and accompanying documentation are factual references to the upstream project
+only, as permitted under CERN-OHL-W v2 §8.2 (factual use of names).
+
+Opulo branding has been removed from all PlaceStation hardware (including the
+silkscreen of the TIPL-manufactured motherboard) and software in compliance
+with CERN-OHL-W v2 §8.2.
+
+================================================================================
+END OF NOTICE
+================================================================================
