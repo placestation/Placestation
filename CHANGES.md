@@ -63,7 +63,19 @@ PlaceStation ships with the datum board originally designed by Opulo — the hom
 
 **Unchanged:** The homing fiducial dot, golden guideline squares, board outline, and all copper/drill geometry are identical to upstream. This is **not** a redesign, and calibration behavior (homing correction, mm/pixel calibration) is unaffected.
 
-## 5. Dual-color printed secondary fiducial
+## 5. Feeder PCB manufactured by TIPL (silkscreen debranded)
+
+**Type:** PCB modification (silkscreen only)
+**Files:** `pcb/feeder-debranded/` *(gerbers pending upload)*
+**License:** CERN-OHL-W v2
+
+PlaceStation ships with the Photon feeder PCB originally designed by Opulo, **manufactured by Tejwani Industries Private Limited** under the CERN-OHL-W v2 license. As with the motherboard and datum board, the Opulo wordmark and logo have been removed from the silkscreen layer per CERN-OHL-W v2 §8.2.
+
+**Attribution note:** The feeder PCB silkscreen also carried original artwork by **Alethea "Stargirl" Flowers** ([@theacodes](https://github.com/theacodes)). This artwork was inadvertently removed in the same silkscreen debranding pass as the Opulo logo — it was not a deliberate removal of her work, and no claim of authorship over that artwork is made by TIPL. See [CREDITS.md](./CREDITS.md#feeder-pcb-art-alethea-stargirl-flowers) for full attribution; we intend to restore the art in a future silkscreen revision.
+
+**Unchanged:** Electrical design, copper layers, drill files, BOM, component values, functionality, and the Photon firmware/protocol are identical to upstream. This is **not** a redesign.
+
+## 6. Dual-color printed secondary fiducial
 
 **Type:** Mechanical modification (replacement for PCB-based part)
 **Files:** `hardware/secondary-fid-dual-color/`
@@ -77,7 +89,7 @@ Opulo's stock secondary fiducial is a small PCB with a copper dot at center. Pla
 
 Eliminates one small PCB from the BOM, simplifies sourcing, and is more durable than a thin PCB if knocked.
 
-## 6. OpenPnP closed-loop feeder calibration plugin
+## 7. OpenPnP closed-loop feeder calibration plugin
 
 **Type:** Software modification (OpenPnP plugin)
 **Files:** `software/openpnp/`
@@ -97,7 +109,7 @@ PlaceStation also ships a standalone **gear ratio calibration web tool** for fin
 
 For full source, integration instructions, and the OpenPnP fork base, see the companion repository linked above and `software/openpnp/README.md`.
 
-## 7. Custom Marlin firmware
+## 8. Custom Marlin firmware
 
 **Type:** Firmware modification
 **Files:** `firmware/marlin/` (sources uploaded separately)
@@ -124,7 +136,7 @@ For clarity, the following parts of LumenPnP are used **unchanged** in PlaceStat
 - Nozzle holder — PlaceStation uses a community design by Klingler/PapaJ ([Printables #1371646](https://www.printables.com/model/1371646)), not Opulo's stock holder. See CREDITS.md for attribution
 - Bottom camera and lighting
 - Vacuum system (pumps, valves, tubing)
-- Feeders (Photon firmware and protocol)
+- Feeder PCB electrical design and Photon firmware/protocol (only silkscreen modified — see section 5)
 
 ---
 
@@ -136,6 +148,7 @@ For clarity, the following parts of LumenPnP are used **unchanged** in PlaceStat
 | `x-motor-mount` | Opulo | **Modified** (endstop cavity removed) |
 | `mobo-REV05` | Opulo | **Modified** (silkscreen debranded) |
 | Datum board | Opulo | **Modified** (silkscreen debranded) |
+| Feeder PCB | Opulo (board), Stargirl Flowers (silkscreen art) | **Modified** (silkscreen debranded — see CREDITS.md) |
 | Secondary fiducial | Opulo | **Replaced** (dual-color print instead of PCB) |
 | Nozzle holder | Richard Klingler → PapaJ | Used as-is (community design, not Opulo's) |
 | Marlin firmware | Marlin team → Opulo (sphawes) | **Modified** (sensorless homing + speed tweaks) |

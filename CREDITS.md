@@ -66,6 +66,16 @@ PlaceStation's feeders use the Photon firmware unmodified.
 
 PlaceStation includes a separate **gear ratio calibration web tool** (in `software/openpnp/gear-ratio-tool/`) for measuring the actual gear ratio of Photon feeder motors that may differ from the firmware-hardcoded value. The tool is TIPL's own work, licensed MIT. It does not modify Photon firmware — it just produces the constant you patch in yourself.
 
+## Feeder PCB art: Alethea "Stargirl" Flowers
+
+The Photon feeder PCB silkscreen carries original artwork by **Alethea "Stargirl" Flowers** ([@theacodes](https://github.com/theacodes), [thea.codes](https://thea.codes/)), an open-source hardware/software creative technologist who has contributed to Opulo's ecosystem (including the Starfish RP2040 feeder control board).
+
+- **Author:** Alethea "Stargirl" Flowers
+- **GitHub:** https://github.com/theacodes
+- **Website:** https://thea.codes/
+
+When removing the Opulo wordmark/logo from the feeder PCB silkscreen (per CERN-OHL-W v2 §8.2, see `CHANGES.md` §5), this artwork was inadvertently removed from the same silkscreen layer along with it. **This was not intentional and is not a disavowal of the work** — TIPL makes no claim of authorship over this artwork and credits it here in full. We're documenting this openly and will restore the art to a future silkscreen revision.
+
 ## Tools and libraries
 
 PlaceStation development uses:
@@ -90,6 +100,8 @@ TIPL's specific contributions to this repository:
 - `x-motor-mount` modification (endstop cavity removed)
 - MGN12 X-gantry mount design
 - `mobo-REV05` silkscreen debrand (manufactured by TIPL)
+- Datum board silkscreen debrand (manufactured by TIPL)
+- Feeder PCB silkscreen debrand (manufactured by TIPL) — see attribution note above regarding Stargirl Flowers' artwork
 - Dual-color secondary fiducial print
 - OpenPnP closed-loop feeder pocket calibration plugin
 - OpenPnP gear ratio calibration web tool

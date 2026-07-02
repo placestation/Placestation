@@ -22,9 +22,10 @@ For a detailed list see [CHANGES.md](./CHANGES.md). In brief:
 2. **MGN12 linear rails throughout** — consistent rail size simplifies sourcing and assembly
 3. **Motherboard manufactured by TIPL** — `mobo-REV05` design from Opulo, manufactured by TIPL with Opulo branding removed from silkscreen (license-compliant per CERN-OHL-W v2 §8.2)
 4. **Datum board manufactured by TIPL** — Opulo's homing/calibration fiducial board, manufactured by TIPL with Opulo branding removed from silkscreen (same license-compliant debranding as the motherboard)
-5. **Dual-color printed secondary fiducial** — replaces Opulo's PCB-based fiducial with a 3D-printed dual-extrusion part (black surround, white center dot)
-6. **OpenPnP closed-loop feeder calibration plugin** — vision-based pocket calibration for Photon feeders, integrated into the `press-play-walk-away` branch of OpenPnP
-7. **Custom Marlin firmware** — sensorless homing for X/Y plus speed-increment customizations
+5. **Feeder PCB manufactured by TIPL** — Photon feeder board from Opulo, manufactured by TIPL with Opulo branding removed from silkscreen. This pass also inadvertently removed silkscreen artwork by Alethea "Stargirl" Flowers ([@theacodes](https://github.com/theacodes)) — see [CREDITS.md](./CREDITS.md#feeder-pcb-art-alethea-stargirl-flowers) for attribution
+6. **Dual-color printed secondary fiducial** — replaces Opulo's PCB-based fiducial with a 3D-printed dual-extrusion part (black surround, white center dot)
+7. **OpenPnP closed-loop feeder calibration plugin** — vision-based pocket calibration for Photon feeders, integrated into the `press-play-walk-away` branch of OpenPnP
+8. **Custom Marlin firmware** — sensorless homing for X/Y plus speed-increment customizations
 
 ## Repository structure
 
@@ -90,6 +91,7 @@ Particular thanks to:
 - **The OpenPnP project** and contributors, especially **Jorropo** for the `press-play-walk-away` branch
 - **Richard Klingler** and **PapaJ** for the CP40 nozzle holder design
 - **The Photon firmware project** for the Photon feeder protocol
+- **Alethea "Stargirl" Flowers** ([@theacodes](https://github.com/theacodes)) for the original feeder PCB silkscreen artwork
 - **The Marlin Firmware project** for the base firmware
 
 ## Contact
