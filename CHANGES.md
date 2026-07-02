@@ -51,7 +51,19 @@ PlaceStation ships with the `mobo-REV05` board originally designed by Opulo, **m
 
 A future version with a Raspberry Pi Compute Module (CM4) on the back of the motherboard for onboard OpenPnP execution is in development and will be released here when complete.
 
-## 4. Dual-color printed secondary fiducial
+## 4. Datum board manufactured by TIPL (silkscreen debranded)
+
+**Type:** PCB modification (silkscreen only)
+**Files:** `pcb/datum-board-debranded/`
+**License:** CERN-OHL-W v2
+
+PlaceStation ships with the datum board originally designed by Opulo — the homing/calibration fiducial board that mounts to the primary staging plate — **manufactured by Tejwani Industries Private Limited** under the CERN-OHL-W v2 license.
+
+**Silkscreen-only modification:** The Opulo wordmark and logo have been removed from the silkscreen layer, per the same CERN-OHL-W v2 §8.2 requirement described in section 3 above.
+
+**Unchanged:** The homing fiducial dot, golden guideline squares, board outline, and all copper/drill geometry are identical to upstream. This is **not** a redesign, and calibration behavior (homing correction, mm/pixel calibration) is unaffected.
+
+## 5. Dual-color printed secondary fiducial
 
 **Type:** Mechanical modification (replacement for PCB-based part)
 **Files:** `hardware/secondary-fid-dual-color/`
@@ -65,7 +77,7 @@ Opulo's stock secondary fiducial is a small PCB with a copper dot at center. Pla
 
 Eliminates one small PCB from the BOM, simplifies sourcing, and is more durable than a thin PCB if knocked.
 
-## 5. OpenPnP closed-loop feeder calibration plugin
+## 6. OpenPnP closed-loop feeder calibration plugin
 
 **Type:** Software modification (OpenPnP plugin)
 **Files:** `software/openpnp/`
@@ -85,7 +97,7 @@ PlaceStation also ships a standalone **gear ratio calibration web tool** for fin
 
 For full source, integration instructions, and the OpenPnP fork base, see the companion repository linked above and `software/openpnp/README.md`.
 
-## 6. Custom Marlin firmware
+## 7. Custom Marlin firmware
 
 **Type:** Firmware modification
 **Files:** `firmware/marlin/` (sources uploaded separately)
@@ -123,6 +135,7 @@ For clarity, the following parts of LumenPnP are used **unchanged** in PlaceStat
 | Frame, base, gantry | Opulo | Used as-is (MGN12 rail substitution) |
 | `x-motor-mount` | Opulo | **Modified** (endstop cavity removed) |
 | `mobo-REV05` | Opulo | **Modified** (silkscreen debranded) |
+| Datum board | Opulo | **Modified** (silkscreen debranded) |
 | Secondary fiducial | Opulo | **Replaced** (dual-color print instead of PCB) |
 | Nozzle holder | Richard Klingler → PapaJ | Used as-is (community design, not Opulo's) |
 | Marlin firmware | Marlin team → Opulo (sphawes) | **Modified** (sensorless homing + speed tweaks) |

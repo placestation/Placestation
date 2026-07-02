@@ -21,9 +21,10 @@ For a detailed list see [CHANGES.md](./CHANGES.md). In brief:
 1. **Sensorless homing (no endstop PCB)** — modified `x-motor-mount` removes the endstop cavity; X/Y endstop hardware is removed entirely; Marlin firmware patched for sensorless homing
 2. **MGN12 linear rails throughout** — consistent rail size simplifies sourcing and assembly
 3. **Motherboard manufactured by TIPL** — `mobo-REV05` design from Opulo, manufactured by TIPL with Opulo branding removed from silkscreen (license-compliant per CERN-OHL-W v2 §8.2)
-4. **Dual-color printed secondary fiducial** — replaces Opulo's PCB-based fiducial with a 3D-printed dual-extrusion part (black surround, white center dot)
-5. **OpenPnP closed-loop feeder calibration plugin** — vision-based pocket calibration for Photon feeders, integrated into the `press-play-walk-away` branch of OpenPnP
-6. **Custom Marlin firmware** — sensorless homing for X/Y plus speed-increment customizations
+4. **Datum board manufactured by TIPL** — Opulo's homing/calibration fiducial board, manufactured by TIPL with Opulo branding removed from silkscreen (same license-compliant debranding as the motherboard)
+5. **Dual-color printed secondary fiducial** — replaces Opulo's PCB-based fiducial with a 3D-printed dual-extrusion part (black surround, white center dot)
+6. **OpenPnP closed-loop feeder calibration plugin** — vision-based pocket calibration for Photon feeders, integrated into the `press-play-walk-away` branch of OpenPnP
+7. **Custom Marlin firmware** — sensorless homing for X/Y plus speed-increment customizations
 
 ## Repository structure
 
@@ -44,7 +45,8 @@ For a detailed list see [CHANGES.md](./CHANGES.md). In brief:
 │   ├── mgn12-x-gantry/
 │   └── secondary-fid-dual-color/
 ├── pcb/                             ← PCB modifications (CERN-OHL-W v2)
-│   └── mobo-REV05-debranded/
+│   ├── mobo-REV05-debranded/
+│   └── datum-board-debranded/
 ├── firmware/                        ← Firmware (GPLv3)
 │   └── marlin/                      ← (placeholder, sources uploaded separately)
 ├── software/                        ← OpenPnP plugins and configs
